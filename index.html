@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hitung Luas dan Keliling</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <header>
+        <h1>RevoU</h1>
+        <p>Mini Course dari RevoU</p>
+        <nav>
+            <button onclick="showSection('segitiga')">Luas Segitiga</button>
+            <button onclick="showSection('jajargenjang')">Luas Jajar Genjang</button>
+        </nav>
+    </header>
+
+    <section id="segitiga" class="calculator">
+        <h2>Luas Segitiga</h2>
+        <p>Rumus Luas Segitiga: L = 1/2 x a x t</p>
+        <form id="segitigaForm">
+            <label for="alas">Alas (a):</label>
+            <input type="number" id="alas" name="alas" required>
+            <label for="tinggi">Tinggi (t):</label>
+            <input type="number" id="tinggi" name="tinggi" required>
+            <button type="button" onclick="hitungSegitiga()">Hitung</button>
+        </form>
+        <div id="segitigaHasil"></div>
+    </section>
+
+    <section id="jajargenjang" class="calculator" style="display:none;">
+        <h2>Luas dan Keliling Jajar Genjang</h2>
+        <p>Rumus Luas Jajar Genjang: L = a x t</p>
+        <p>Rumus Keliling Jajar Genjang: K = 2 x (a + s)</p>
+        <form id="jajargenjangForm">
+            <label for="alasJG">Alas (a):</label>
+            <input type="number" id="alasJG" name="alasJG" required>
+            <label for="tinggiJG">Tinggi (t):</label>
+            <input type="number" id="tinggiJG" name="tinggiJG" required>
+            <label for="sisiJG">Sisi Miring (s):</label>
+            <input type="number" id="sisiJG" name="sisiJG" required>
+            <button type="button" onclick="hitungJajarGenjang()">Hitung</button>
+        </form>
+        <div id="jajargenjangHasil"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
