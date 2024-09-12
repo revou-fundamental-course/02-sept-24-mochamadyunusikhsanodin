@@ -1,0 +1,25 @@
+{
+  "name": "02-sept-24-mochamadyunusikhsanodin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/revou-fundamental-course/02-sept-24-mochamadyunusikhsanodin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/revou-fundamental-course/02-sept-24-mochamadyunusikhsanodin/issues"
+  },
+  "homepage": "https://github.com/revou-fundamental-course/02-sept-24-mochamadyunusikhsanodin#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.0"
+  }
+}

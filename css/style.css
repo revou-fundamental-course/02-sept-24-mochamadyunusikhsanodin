@@ -1,3 +1,4 @@
+/* Style dasar */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -24,7 +25,6 @@ nav button {
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
-    
 }
 
 .calculator {
@@ -34,6 +34,7 @@ nav button {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     margin: 0 auto;
+    width: 100%;
 }
 
 form label, form input {
@@ -51,5 +52,42 @@ button {
 }
 
 button:hover {
-    background-color: #399fbb   ;
+    background-color: #399fbb;
+}
+
+/* Media query untuk layar lebih kecil */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .calculator {
+        padding: 15px;
+        max-width: 100%; /* Ubah max-width menjadi 100% pada layar kecil */
+    }
+
+    nav button {
+        padding: 8px 16px; /* Mengurangi padding tombol untuk layar kecil */
+    }
+    
+    button {
+        padding: 8px; /* Ubah ukuran tombol pada layar kecil */
+    }
+}
+
+/* Media query untuk layar sangat kecil (mobile) */
+@media (max-width: 400px) {
+    nav button {
+        padding: 6px 12px; /* Lebih kecil lagi padding tombol untuk layar kecil */
+        font-size: 14px;    /* Perkecil ukuran font untuk tombol */
+    }
+
+    header h1 {
+        font-size: 20px;    /* Sesuaikan ukuran heading pada layar kecil */
+    }
+
+    button {
+        padding: 6px;       /* Ubah ukuran tombol pada layar kecil */
+        font-size: 14px;    /* Sesuaikan ukuran font tombol */
+    }
 }

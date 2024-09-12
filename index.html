@@ -20,13 +20,27 @@
         <h2>Luas Segitiga</h2>
         <p>Rumus Luas Segitiga: L = 1/2 x a x t</p>
         <form id="segitigaForm">
+            <h3>Hitung Luas Segitiga</h3>
+        
             <label for="alas">Alas (a):</label>
-            <input type="number" id="alas" name="alas" required>
-            <label for="tinggi">Tinggi (t):</label>
-            <input type="number" id="tinggi" name="tinggi" required>
+            <input type="number" id="alas" name="alas" required><br>
+        
+            <label for="tinggi">Tinggi:</label>
+            <input type="number" id="tinggi" name="tinggi" required><br>
+            <h3>Hitung Keliling Segitiga</h3>
+            <label for="sisiA">Sisi A:</label>
+            <input type="number" id="sisiA" name="sisiA" required><br>
+        
+            <label for="sisiB">Sisi B:</label>
+            <input type="number" id="sisiB" name="sisiB" required><br>
+        
+            <label for="sisiC">Sisi C:</label>
+            <input type="number" id="sisiC" name="sisiC" required><br>
+        
             <button type="button" onclick="hitungSegitiga()">Hitung</button>
         </form>
-        <div id="segitigaHasil"></div>
+        
+        <div id="hasilSegitiga"></div>
     </section>
 
     <section id="jajargenjang" class="calculator" style="display:none;">
@@ -45,6 +59,6 @@
         <div id="jajargenjangHasil"></div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
